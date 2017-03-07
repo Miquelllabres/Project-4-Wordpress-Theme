@@ -1,0 +1,128 @@
+
+.width1 .adventures{
+	height: 5vh;
+	box-shadow:none;
+	text-shadow:none;
+	background-color: #008080;
+	color: white;
+	border: none;
+	font-size: 1.25rem;
+	margin: 3vh 1vh;
+	width: 250px;
+}
+.width1 .adventures:hover{
+	box-shadow:none;
+	background-color:#004F4F;
+
+}
+#ADVEN {
+	img{
+	position: relative;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+#ADVEN {
+	.width{
+		width: 80%;
+		margin:0 auto;
+		height: 60vh;
+	}
+	.width2{
+		a{
+	color:white;
+	text-decoration:none;
+		}
+		input{
+	box-shadow:none;
+	border:1px solid white;
+	font-size: 1rem;
+	color:white;
+	background-color:none;
+	background:none;
+	width: 150px;
+	height: 40px;
+	margin:10vh 2vh ;
+	position: absolute;
+	text-shadow:none;
+		}
+	}
+	.flex1{
+	display: flex;
+	flex-direction: column;	
+	}
+	.flex2{
+	display: -webkit-flex;
+	display: flex;
+	
+	}
+	.border{
+	border:5px solid #fff;
+	width: 80%;
+	height:80vh;
+	
+	}
+	.border2{
+	border:5px solid #fff;
+	width: 100%;
+	height:40vh;
+	}
+	.border3{
+	height:40vh;	
+	}
+}
+	
+
+#ADVEN {
+	input{
+	box-shadow:none;
+	border:1px solid white;
+	font-size: 1rem;
+	color:white;
+	background:none;
+	width: 150px;
+	height: 40px;
+	margin:0 2vh ;
+	position: absolute;
+	text-shadow:none;
+	}
+	a{
+		color:white;
+	}
+	h1{
+		margin: 7vh 2vh;
+		font-size: 2.5rem;
+		font-family: merry;
+		line-height: 5vh;
+	}
+	
+}
+.advenEntry{
+	margin-top:4vh;
+	color:white !important;  
+}
+.borderA{
+	border:5px solid #fff;
+	
+}
+.width input:hover{
+	box-shadow:none;
+	background-color: #004F4F;
+	border-color: #004F4F;
+}
+.flex-container {display: -webkit-flex;
+	display: flex;
+	flex-wrap:wrap;
+	margin:5vh auto;
+	width:60%;
+	justify-content:space-around;}
+
+.width2{width:50%;
+height:40vh;}
+.width3{width:35%;
+height:25vh;}
+
+.width{width: 80%;margin: 0 auto;}
+.width1{width: 80%;margin: 0 auto;}
+
