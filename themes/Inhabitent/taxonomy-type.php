@@ -19,9 +19,9 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				<hr>
-			</header><!-- .page-header -->
+			</header>
 			<main id="main" class="site-main" role="main">
-			<?php /* Start the Loop */ ?>
+			<?php ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
 							<?php 
@@ -53,8 +53,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
 <?php get_footer(); ?>

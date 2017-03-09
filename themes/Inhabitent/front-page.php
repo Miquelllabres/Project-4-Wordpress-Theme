@@ -23,7 +23,7 @@ get_header(); ?>
 					$taxonomies = get_object_taxonomies( array( 'post_type' => $post_type ) );
 					foreach( $taxonomies as $taxonomy ) :
 					    $terms = get_terms( $taxonomy );?>
-					<div class="head uppercase">	<h1>shop stuff</h1>	</div>
+					<div class="head uppercase">	<h1><?php echo get_the_title()." stuff" ?></h1>	</div>
 					 <div class="flex">
 
 					 <?php $term = $wp_query->queried_object; ?>

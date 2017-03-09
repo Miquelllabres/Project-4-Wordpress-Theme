@@ -1,9 +1,11 @@
 #nav{
+	z-index: 999;
 	width: 100%;
 	align-self:flex-start;
 
 
 	.flex{
+		z-index: 999;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -13,7 +15,7 @@
 		z-index: 999;
 	}
 	.logo{
-		
+		z-index: 999;
 		height: 5vh;
 		width:7vh;
 		margin:1vh 4vh;
@@ -21,6 +23,7 @@
 
 	a{
 		color:$color_nav_link;
+		z-index: 999 !important;
 
 		a:hover{
 			color:$color_nav_link-hover;

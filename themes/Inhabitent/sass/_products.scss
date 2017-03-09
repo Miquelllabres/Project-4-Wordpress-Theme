@@ -100,12 +100,21 @@
 
 
 #products{
+	
+
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap:wrap;
 	margin:5vh auto;
-	width:80%;
+	width:100%;
 	justify-content:space-around;
+	#SingleP{
+	display: -webkit-flex;
+	display: flex;
+	width:100%;
+	justify-content:space-between;
+		
+	}
 	img{
 		width: 200px;
 		height: 200px;

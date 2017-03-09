@@ -10,28 +10,31 @@ get_header(); ?>
 
 
 	<div id="find" class="featured-image-wrapper">
-		<div class="main">
+		<div>
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main" role="main">
-
+				
+					<?php display_taxonomies($query); ?>
+			
 						<?php if ( have_posts() ) : ?>
 
 							<header class="page-header">
-								<?php
+							<!-- 	<?php
 									the_archive_title( '<h1 class="page-title">', '</h1>' );
 									the_archive_description( '<div class="taxonomy-description">', '</div>' );
-								?>
-							</header><!-- .page-header -->
-
-							<?php /* Start the Loop */ ?>
+								?> -->
+							</header>
+							<?php  ?>
+							<div id="products">
 							<?php while ( have_posts() ) : the_post(); ?>
-
+								
+								
 								<?php
-									get_template_part( 'template-parts/content' ,'journal');
+									get_template_part( 'template-parts/content' ,get_post_type());
 								?>
-
+								
 							<?php endwhile; ?>
-
+							</div>
 							<?php the_posts_navigation(); ?>
 
 						<?php else : ?>
@@ -40,14 +43,14 @@ get_header(); ?>
 
 						<?php endif; ?>
 
-					</main><!-- #main -->
-				</div><!-- #primary -->
+					</main>
+				</div>
 
-<?php get_sidebar(); ?>
+
 
 
 		</div>
-			<?php get_sidebar(); ?>
+		
 	</div>
 
 

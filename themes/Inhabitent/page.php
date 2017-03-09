@@ -3,7 +3,7 @@ page
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent
  */
 
 get_header(); ?>

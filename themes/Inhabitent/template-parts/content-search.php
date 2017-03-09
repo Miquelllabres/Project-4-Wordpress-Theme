@@ -23,6 +23,7 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<div>
-		<button>READ MORE &rarr;</button>
+	<a href="<?php echo get_permalink( $post->ID ); ?>">
+		<button>READ MORE &rarr;</button></a>
 	</div>
 </article><!-- #post-## -->

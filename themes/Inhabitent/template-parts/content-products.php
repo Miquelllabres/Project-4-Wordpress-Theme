@@ -1,46 +1,33 @@
+
 <?php
 /**
- * Template part for displaying single products.
+ * Template part for displaying  products.
  *
  * @package Inhabitent
  */
 
 ?>
+<?php  global $post; 
+				$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 
+					array( 5600,1000 ), false, '' ); 	?>
+
+	<?php if(is_single()) { ?>
 
 <article class="SingleProduct" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="single">
-
-	<?php if ( has_post_thumbnail() ) : ?>
-			<?php 
-			    global $post; 
-				$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 
-					array( 5600,1000 ), false, '' ); 
-			?>
-	<?php endif; ?>
-
-	<div class="singleP" style=" background:url(<?php echo $src[0]; ?> )center !important ;background-size:cover !important;">
+		<div class="singleP" style=" background:url(<?php echo $src[0]; ?> )center !important ;background-size:cover !important;">
+		</div>
 		
-	</div>
-		
-
-		
-<div class="entry-content">
+	<div class="entry-content">
 		<div class="entry-meta">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<h2><?php	setlocale(LC_MONETARY, 'en_US');
 					echo money_format('%.2n', get_field( 'price') ) ;  ?> </h2>
-		</div><!-- .entry-meta -->
-	<!-- .entry-header -->
-
-	<div >
+		</div>
+	<div>
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+		
+	</div>
 	<div class="social">
 	<button style="font-size:16px"><i class="fa fa-facebook"></i>LIKE</button>
 	<button style="font-size:16px"><i class="fa fa-twitter"></i>TWEET</button>
@@ -49,8 +36,22 @@
 
 	</div>
 <div>
+
 </header>
-	<footer class="entry-footer">
+</article>
+
+<?php }else{ ?>
+	
+<div class="width2" >						 	
+	<div class="width3" id="post-<?php the_ID(); ?>" <?php post_class(); ?>   style=" background:url(<?php echo $src[0]; ?> )center !important ;background-size:cover !important;">
+	</div>	
+   	<div class="borderP">
+			<?php the_title( sprintf( '<p class="productTitle"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ) ?>
+			<p><?php	setlocale(LC_MONETARY, 'en_US');
+			echo money_format('%.2n', get_field( 'price') ) ;  ?> </p>
+										
+	</div>
+</div>
+
+<?php	} ?>
 		
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->

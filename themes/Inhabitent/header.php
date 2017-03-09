@@ -35,6 +35,12 @@
 				else { 
 					$class = "/images/logos/inhabitent-logo-tent.svg";
 					$teal = "teal";
+					$borderNav = "borderNav";
+				}
+				if (is_singular('adventures')){
+					$teal = "";
+					$class = "/images/logos/inhabitent-logo-tent-white.svg";
+
 				}
 				
 				?>
@@ -42,10 +48,10 @@
 				<div  class="<?php echo $class ?>">
 				
 
-				<div id="nav">
+				<div id="nav" class="<?php echo $borderNav ?>">
 						<div class="flex">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_bloginfo("stylesheet_directory").$class;$zindex?>" class="logo">
+							<img src="<?php echo get_bloginfo("stylesheet_directory").$class;?>" class="logo">
 						</a>	
 
 								<nav id="site-navigation" class="<?php echo $teal ?> main-navigation uppercase " role="navigation">

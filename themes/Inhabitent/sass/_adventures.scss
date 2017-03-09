@@ -1,4 +1,35 @@
+#adventuresArchive{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	img{
+		width: 200px;
+		height: 200px;
+	}
+	a{
+		text-decoration: none;
+	}
+	p{
+		font-size: 0.8rem;
+		margin:2vh;
+	}
+	.productTitle{
 
+	}
+	.borderP{
+		justify-content: space-between;
+		display: flex;
+		flex-direction: row;
+		border:1px solid #CCCCCC;
+		border-top:3px solid #CCCCCC;
+	}
+	.width2{
+		width: 100% !important;
+	}
+	.width3{
+		width:100%;
+		height:25vh;}
+}
 .width1 .adventures{
 	height: 5vh;
 	box-shadow:none;
@@ -23,7 +54,15 @@
 		text-decoration: none;
 	}
 }
+.widthP{
+	width:50%;
+}
 #ADVEN {
+	.productsWidth{
+		width: 100%;
+		height: 40vh;
+
+	}
 	.width{
 		width: 80%;
 		margin:0 auto;
