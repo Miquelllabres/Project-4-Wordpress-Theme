@@ -1,0 +1,107 @@
+#JOURNAL{
+	article{
+		width: 30%;
+	}
+	.border{
+		border-top:3px solid #ccc;
+		height:27vh;
+	}
+	a{
+		color:teal;
+		text-decoration:none;
+	}
+	button{
+	font-size: 0.75rem;
+	background: none;
+	border:1px solid black;
+	color: black;
+	width: 16vh;
+	height: 5vh;
+	margin:1vh;
+	box-shadow:none;
+	}
+	button:hover{
+	background-color: #008080;
+	color:white;
+	border:none;
+	margin:1vh;
+	box-shadow:none;
+	text-shadow:none;
+	}
+	h2{
+		font-size: 1.75rem;
+	}
+	img{
+		height:30vh;
+	}
+
+}
+#journa{
+	display:flex;
+	
+	height:70vh;
+	a{
+		color:white;
+		text-decoration:none;
+	}
+	.entry-meta{
+		width: 70%;
+		background-color:teal;
+		height: 3vh;
+		align-self: flex-end;
+		font-family: novo;
+		color: white;
+		padding:0 1vh;
+	}
+	.entry-title{
+		width: 70%;
+		background-color:teal;
+		height: 15vh;
+
+
+		
+	}
+	h2{
+		padding: 0 1vh;
+		margin:4vh 0;
+		font-size: 2.25rem;
+		font-family: novo;
+	}
+}
+.journal-content{
+	margin:2vh 0;
+	p{
+		font-size: 1rem !important;
+
+	}
+	input{
+		margin:2vh 0;
+		text-align: center;
+	}
+}
+.widthComments{
+	width:90% !important;
+	margin:0 9vh !important;
+	textarea{
+		width:80%;
+	}
+	.submit{
+	font-size: 1rem;
+	background-color: #008080;
+	border:1px solid #008080;
+	color: white;
+	width: 200px;
+	height: 40px;
+	margin:1vh;
+	box-shadow:none;
+	text-shadow:none;
+	}
+	.submit:hover{
+	box-shadow:none;
+	text-shadow:none;
+	}
+	.comment-form-comment{
+			display: flex !important;
+			flex-direction: column !important;
+		}
+}

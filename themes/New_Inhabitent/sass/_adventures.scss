@@ -1,0 +1,159 @@
+.widthP{
+	width:50%;
+	}
+.advenSidebar{
+	i{
+		color: black;
+		margin-right: 5px;
+	}
+	span{
+		font-weight: bold;
+	}
+	a{
+		color:teal;
+	}
+}
+#ADVENARC {
+
+	width:48%;
+	margin:0 auto;
+	div{
+		width:100% !important;
+	}
+	.advenEntry{
+	margin-top:4vh;
+	color:white !important;  
+	}
+	.productsWidth{
+		width: 100%;
+		height: 40vh;
+		h2{
+		padding: 3vh 1vh !important;
+		font-size: 2.5rem;
+		font-family: merry;
+		line-height: 5vh;
+		a{
+
+		color:white;
+		text-decoration:none;
+		}
+	}
+	}
+	
+	.width{
+		width: 80%;
+		margin:0 auto;
+		height: 60vh;
+	}
+	input{
+	box-shadow:none;
+	border:1px solid white;
+	font-size: 1rem;
+	color:white;
+	background:none;
+	width: 150px;
+	height: 40px;
+	margin:0 2vh ;
+	position: absolute;
+	text-shadow:none;
+	}
+	
+	.flex1{
+	display: flex;
+	flex-direction: column;	
+	}
+	.flex2{
+	display: -webkit-flex;
+	display: flex;
+	
+	}
+	.border{
+	border:5px solid #fff;
+	width: 100%;
+	height:80vh;
+	
+	}
+	.border2{
+	border:5px solid #fff;
+	width: 100%;
+	height:40vh;
+	}
+	.border3{
+	height:40vh;	
+	}
+}
+#ADVEN {
+	width:78%;
+	.productsWidth{
+		width: 100%;
+		height: 40vh;
+	}
+	
+	.width{
+		width: 80%;
+		margin:0 auto;
+		height: 60vh;
+	}
+	input{
+	box-shadow:none;
+	border:1px solid white;
+	font-size: 1rem;
+	color:white;
+	background:none;
+	width: 150px;
+	height: 40px;
+	margin:0 2vh ;
+	position: absolute;
+	text-shadow:none;
+	}
+	a{
+		color:white;
+		text-decoration:none;
+	}
+	h1{
+		margin: 7vh 2vh;
+		font-size: 2.5rem;
+		font-family: merry;
+		line-height: 5vh;
+	}
+	.flex1{
+	display: flex;
+	flex-direction: column;	
+	}
+	.flex2{
+	display: -webkit-flex;
+	display: flex;
+	
+	}
+	.border{
+	border:5px solid #fff;
+	width: 100%;
+	height:80vh;
+	
+	}
+	.border2{
+	border:5px solid #fff;
+	width: 100%;
+	height:40vh;
+	}
+	.border3{
+	height:40vh;	
+	}
+}
+.width1{width: 80%;margin: 0 auto;}
+.width1 .adventures{
+	height: 5vh;
+	box-shadow:none;
+	text-shadow:none;
+	background-color: #008080;
+	color: white;
+	border: none;
+	font-size: 1.25rem;
+	margin: 3vh 1vh;
+	width: 250px;
+}
+.width1 .adventures:hover{
+	box-shadow:none;
+	background-color:#004F4F;
+
+}

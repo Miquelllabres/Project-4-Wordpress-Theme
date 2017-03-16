@@ -66,6 +66,7 @@ class WPForms_Settings {
 			$this->options = get_option( 'wpforms_settings', array() );
 
 			add_action( 'wpforms_tab_settings_general',    array( $this, 'settings_page_tab_general'    ) );
+			add_action( 'wpforms_tab_settings_providers',  array( $this, 'settings_page_tab_providers'  ) );
 			add_action( 'wpforms_tab_settings_system',     array( $this, 'settings_page_tab_system'     ) );
 			add_action( 'admin_enqueue_scripts',           array( $this, 'enqueues'                     ) );
 			add_action( 'wpforms_admin_page',              array( $this, 'output'                       ) );
@@ -150,6 +151,7 @@ class WPForms_Settings {
 		// Define our base tabs
 		$tabs = array(
 			'general'   => __( 'General', 'wpforms' ),
+			'providers' => __( 'Integrations', 'wpforms' ),
 			'system'    => __( 'System Information', 'wpforms' ),
 		);
 
@@ -316,6 +318,31 @@ class WPForms_Settings {
 				<?php submit_button( __( 'Save General Settings', 'wpforms'), 'primary', 'submit-general' ); ?>
 
 			</form>
+
+		</div>
+		<?php
+	}
+
+	/**
+	 * Build the output for Integrations (providers) tab on the settings page and check for save.
+	 *
+	 * @since 1.0.0
+	 */
+	public function settings_page_tab_providers() {
+
+		$providers = get_option( 'wpforms_providers', false );
+		$active    = apply_filters( 'wpforms_providers_available', array() );
+
+		// If no provider addons are activated display a message and bail
+		if ( empty( $active ) ) {
+			echo '<div class="notice notice-info below-h2"><p>' . sprintf( __( 'You do not have any marketing add-ons activated. You can head over to the <a href="%s">Add-Ons page</a> to install and activate the add-on for your provider.', 'wpforms' ), admin_url( 'admin.php?page=wpforms-addons' ) ) . '</p></div>';
+			return;
+		}
+		?>
+
+		<div id="wpforms-settings-providers">
+
+			<?php do_action( 'wpforms_settings_providers', $active, $providers ); ?>
 
 		</div>
 		<?php

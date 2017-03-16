@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=ISO-8859-2" http-equiv="content-type">
+    <title>StarterPro | WordPress Theme Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/docs.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/theia-sticky-sidebar.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+		    $(document).ready(function(){
+			    $("#doc-sidebar-nav").sticky({topSpacing:0});
+			    $('#doc-sidebar-nav .scroll').click(function(event){
+					event.preventDefault();
+					var full_url = this.href;
+					var parts = full_url.split("#");
+					var trgt = parts[1];
+					var target_offset = $("#"+trgt).offset();
+					var target_top = target_offset.top;
+					$('html, body').animate({scrollTop:target_top}, 900);
+				});
+			});
+		</script>
+  </head>
+  <body>
+    <div class="container">
+      <header id="header" class="row header">
+        <h1 class="logo-text">StarterPro</h1>
+        <h3 class="doc-slogan">WordPress Theme Documentation</h3>
+      </header>
+      <div class="row">
+        <div id="doc-sidebar" class="col-md-3 stickys">
+          <ul id="doc-sidebar-nav" class="">
+            <li><a class="scroll" href="#intro">Introduction</a></li>
+            <li><a class="scroll" href="#system">System Requirements</a></li>
+            <li> <a class="scroll" href="#wordpress">WordPress</a>
+              <ul>
+                <li><a class="scroll" href="#wpinstal">WordPress Installation</a></li>
+                <li><a class="scroll" href="#wptheme">WP Theme Installation</a></li>
+                <li><a class="scroll" href="#wpvideo">Theme Installation Video</a></li>
+              </ul>
+            </li>
+            <li> <a class="scroll" href="#starter">Starterpro Onepage Theme Installation</a>
+              <ul>
+                <li><a class="scroll" href="#starterInstall">StarterPro Installation</a></li>
+                <li><a class="scroll" href="#essPlugins">StarterPro Essential Plugins</a></li>
+                <li><a class="scroll" href="#demoImport">StarterPro Demo Import</a></li>
+                <li><a class="scroll" href="#oneclickdemoImport">One Click Demo Import</a></li>
+                <li><a class="scroll" href="#menusettings">Menu Settings (Required )</a></li>
+                <li><a class="scroll" href="#permalink">Set Permalinks</a></li>
+                <li><a class="scroll" href="#widgetImport">Widgets Setting Import</a></li>
+                <li><a class="scroll" href="#vcdoc" target="_blank">King Composer Documentation</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="scroll" href="#themeops">StarterPro Options</a>
+              <ul>
+                <li><a class="scroll" href="#ops2">Header Settings</a></li>
+                <li><a class="scroll" href="#ops3">All Logo & Favicon</a></li>
+                <li><a class="scroll" href="#ops4">Sub Header Banner</a></li>
+                <li><a class="scroll" href="#ops7">Typography Settings</a></li>
+                <li><a class="scroll" href="#ops9">Layout & Styling</a></li>
+                <li><a class="scroll" href="#ops10">Social Media</a></li>
+                <li><a class="scroll" href="#ops11">Coming Soon</a></li>
+                <li><a class="scroll" href="#ops12">404 Page</a></li>
+                <li><a class="scroll" href="#ops13">Blog Setting</a></li>
+                <li><a class="scroll" href="#ops14">Footer Setting</a></li>
+            </ul>
+            </li>
+
+            <li>
+              <a class="scroll" href="#themeopss">Our Shortcodes</a>
+              <ul>
+                <li><a class="scroll" href="#short1">Classic Slider</a></li>
+                <li><a class="scroll" href="#short2">Themeum Project</a></li>
+                <li><a class="scroll" href="#short3">Team Carousel</a></li>
+                <li><a class="scroll" href="#short4">Latest Post</a></li>
+                <li><a class="scroll" href="#short5">Call to Action</a></li>
+                <li><a class="scroll" href="#short6">Themeum Title</a></li>
+                <li><a class="scroll" href="#short7">Testimonial</a></li>
+                <li><a class="scroll" href="#short8">Client Carousel</a></li>
+              </ul>
+            </li>
+
+            <li><a class="scroll" href="#scdoc">Homepage Backend</a></li>
+            <li><a class="scroll" href="#shortcode">Shortodes</a></li>
+            <li><a class="scroll" href="http://www.themeum.com/support/" target="_blank">Support Center</a></li>
+          </ul>
+        </div><!-- #doc-sidebar -->
+        <div id="doc-wrap" class="col-md-9">
+          <section class="doc-section">
+            <h1 id="intro">Introduction</h1>
+            <div>
+              <p><img class="img-responsive" src="image/introduction-img.png" alt="eventum theme" height="auto" width="795"></p>
+              <p style="text-align:justify">
+              <strong>StarterPro</strong> is a WordPress 4x onepage theme for creative companies, agencies, corporate houses, independent professionals and teams to build their business and portfolio websites. It’s 100% responsive and mobile friendly. <strong>StarterPro</strong> has 4 homepage layouts built with KingComposer WordPress page builder plugin. Custom Themeum addons for KingComposer make the theme rich and gorgeous. <strong>StarterPro</strong> provides KingComposer Pro ($29) for free. It’s translation and Retina ready for ultimate freedom. 
+
+			   <br>
+			   <a href="http://www.themeum.com/docs/starterpro/introduction/">You can view the theme demos and purchase the item on this page.</a>
+            </div>
+          </section>
+
+          <section class="doc-section">
+            <h1 id="system">System Requirements</h1>
+            <div>
+              <p style="text-align:justify">To use StarterPro, you need to have a WordPress 4.0 (or higher version) site with PHP 5.4 or more running on your hosting server. If you've already installed WordPress on your server and your site is up, that's great. For help regarding WordPress installation, please see this <a href="http://codex.wordpress.org/Installing_WordPress">WordPress Codex</a> link. To learn about some important stuff you should do after installing WordPress, <a href="http://www.themeum.com/important-things-to-do-after-installing-wordpress/">see this post</a> (on our blog).</p>
+
+              <p><strong>Some more resources from WordPress Codex:</strong></p>
+              
+              <ul>
+                <li><a href="http://codex.wordpress.org/First_Steps_With_WordPress">First Steps With WordPress</a></li>
+                <li><a href="http://codex.wordpress.org/FAQ_New_To_WordPress">FAQ New To WordPress</a></li>
+              </ul>
+
+            </div>
+          </section>
+
+          <section class="doc-section">
+            <h1 id="wordpress">Getting Started</h1>
+            <h3 id="wpinstal">WordPress Installation</h3>
+            <div>
+              <p>This theme has been developed only for Wordpress 4.0 or higher
+                versions. So, you need to install WP before you can use this
+                theme. Here you can find WOrdPress installation processs: <a href="http://codex.wordpress.org/Installing_WordPress"
+
+                  target="_blank">Wordpress Codex - Installing Wordpress.</a></p>
+            </div>
+            <h3 id="wptheme">WordPress Theme Installation</h3>
+            <div>
+              <p><strong>WordPress theme is simply a group of files</strong>,
+                called template, bundled together that, when activated in CMS,
+                determine the look and basic functions of your site. By using
+                professional Themeum StarterPro theme, you can have your site up and
+                running with a new design - pretty fast. Theme installation is a 
+                very easy process. Especially when you've chosen the theme you
+                want to use, you'll need to install it into your WordPress
+                website. You'll have the following two choices, as you did when
+                adding new plugins:</p>
+              <ul>
+                <li>You can add the theme directly from within the WP Admin,
+                  using "Upload Theme" option. From Admin Panel go the following
+                  path <span class="highliter">Appearance > Themes > Add New > Upload Theme</span> and select the appropriate zipped theme file,
+                  then click Install Now.</li>
+                <li>If your server is not set up properly or you have any
+                  problem, you'll have to extract and then upload the theme by
+                  hand. Using your favorite FTP client tool upload theme folder
+                  into the folder path <span class="highliter">
+                    /wp-content/themes/ </span>on your server and activate it
+                  from admin panel. </li>
+              </ul>
+              <p><strong>Note:</strong> On your WordPress site, the <span class="highliter">wp-content/themes</span>
+                folder holds all your themes. Each theme you install gets its
+                own subfolder. All of a theme's stylesheets and template files
+                reside inside the theme's folder.</p>
+	
+				<!-- <strong>Video: Installing StarterPro and Importing the Demo Contents</strong>
+				<br><br>
+				<p><iframe width="832" height="420" src="https://www.youtube.com/embed/62s_rtaet9k" frameborder="0" allowfullscreen></iframe></p> -->
+            </div>
+
+          </section>
+          <section class="doc-section">
+            <h1 id="starter">StarterPro Theme Typical Installation Process</h1>
+            <h3 id="starterInstall">Follow These Steps in Order to Install a New
+              WP Theme</h3>
+              <p><strong>Step 1: </strong> Login to your site as an admin user. Then go to Dashboard > Appearance.</p>
+            <div> <img src="image/theme-install.png" class="img-responsive" alt="">
+              
+              <p><strong>Step 2: </strong>Open the Themes menu.</p>
+              <p><strong>Step 3: </strong>Then click on Add New button.</p>
+              <br>
+              
+                   <img src="image/theme-install2.png" class="img-responsive" alt="">
+                  <p><strong>Step 4: </strong>Click the <span class="highliter">Upload
+                    Theme</span> link on the next page.</p>
+                    <br>
+                    <img src="image/theme-install3.png" class="img-responsive" alt="">
+                  <p><strong>Step 5: </strong>Then click on the <span class="highliter">Choose
+                    file </span>button and select <strong>StarterPro.zip</strong> file from your computer
+                  directory.</p>
+                  <p><strong>Step 6: </strong>Now click on the <span class="highliter">Install
+                    Now</span> button and wait for the installation complete.
+                  After successful installation of theme click on <strong>Activate</strong> 
+                  button and enjoy the theme features. After activating, this
+                  theme will be used for the whole site instead of the default WordPress theme.</p> 
+              </div>
+            <h3 id="essPlugins">StarterPro Essential Plugins and Installation</h3>
+            <div>
+              <p>For using all features you have to install and activate all
+                required plugins. All essential plugins are included in the
+                StarterPro theme. </p>
+              <p class="margin-left"> </p>
+              <ul>
+                <li><span class="highliter">King Composer</span></li>
+                <li><span class="highliter">King Composer Pro</span></li>
+                <li><span class="highliter">Themeum Project</span></li>
+                <li><span class="highliter">Contact Form 7</span></li>
+                <li><span class="highliter">Themeum Demo Importer</span></li>
+                <li><span class="highliter">MailChimp for WordPress Lite</span></li>
+                <li><span class="highliter">Widget Settings Importer/Exporter</span></li>
+              </ul>
+              <p>Install above essential plugins in 2 easy steps.</p>
+              <img class="img-responsive" src="image/theme-plugins.png" alt="">
+              <p></p>
+              
+              <p><strong>Step 1:</strong> Go to Dashboard. You will see a notification at the top of the page asking to install the recommended plugins. Install these recommended plugins from there.
+              <p><strong>Step 2: </strong>Then click on <span class="highliter">Activate</span>
+                link under each plugin title and enjoy these plugins.</p>
+            </div>
+
+            <div>
+              <h3 id="demoPlugins">Plugins</h3>
+              <ul>
+                <li><span class="highliter">Themeum Project: </span>Themeum Project is an essential and required plugin. It has all the core features of the theme, like the post type, all custom shortcodes, widgets etc.</li>
+                <li><span class="highliter">KingComposer: </span>KingComposer is used for making page layouts. We’ve developed 10+ dedicated custom shortcodes exclusively for StarterPro.</b><br/><br>
+                  <img class="img-responsive" src="image/king-img/king1.png" alt="">
+                  <p>To access our shortcodes go to Dashboard > Edit Page > Edit With KingComposer.</p><br>
+                  <img class="img-responsive" src="image/king-img/king2.png" alt="">
+                  <p>Then click the Element button to open the elements/shortcodes list.</p> <br>
+                  <img class="img-responsive" src="image/kingcomposer-shortcode.png" alt="">
+                  <p>Finally add your desired elements and shortcodes. </p> <br>
+                </li>
+                <li>
+                  <span class="highliter">MailChimp for WordPress Lite: </span>You can use this plugin for collecting email addresses and this plugin is not mandatory.
+                </li>
+                <li><span class="highliter">Widget Settings Importer/Exporter:</span> Import and Export widget settings. This plugin is not mandatory.</li>
+                <li><span class="highliter">Contact Form 7: </span>You can use this for Contact form and this plugin is not mandatory.</li>
+                <li><span class="highliter">Themeum Demo Importer: </span>Our require plugin you can use for one click demo importer. It is easy to use for demo importer as like our demo.</li>
+              </ul>
+            </div>
+
+
+            <h3 id="demoImport">Demo Import</h3>
+            <div>
+              <p style="text-align: justify;"><strong>Import Sample Data:</strong>
+              If you want to experiment with the demo data on your website then you need to import the sample data. From menu, choose <span class="highliter">Tools > Import > WordPress</span>. Click WordPress, then you will see the "Import WordPress" option which allows you to upload .xml file from <span class="highliter">/ Demo</span> Content folder. If this tool is not installed on your site, you have to install "WordPress Importer" plugin manually.</p>
+            </div>
+            
+
+            <h3 id="oneclickdemoImport">One Click Demo Import</h3>
+            <div>
+              <p style="text-align: justify;"><strong>One Click demo Import Sample Data: </strong>
+              When you install our required plugin "Themeum Demo Importer" then you can see dashboard->One click demo Install option and then click here. The following page will arrive.
+              <img class="img-responsive" src="image/one-click-demo.png">
+              <p>Then you can import any demo from the appeared items by clicking the "Import Demo" button inside each of the demo thumbnails.</p>
+            </div>
+
+
+            <h3 id="menusettings">Menu Settings</h3>
+            <div>
+            <p>It's an important part of StarterPro theme Installation process. Select your menu for Primary Menu Location. Go to Dashboard > Appearance > Menu  then click on Manage Locations and select "Onepage Menu" for Primary Menu Locations. You can follow the below screenshot.</p>
+
+              <img class="img-responsive" src="image/menu-mange-location.png">
+            </div>
+
+            <br>
+            <h3 id="homesettings">Set Static Home Page (Required)</h3>
+            <div>
+              <p>WordPress shows blog posts by default on the front page. If you want to make it look like demo StarterPro site, then you need to set a static Home Page. See the way how to set Static Home Page. Navigate <span class="highliter">Dashboard > Settings > Reading</span>. From here select <span class="highliter">static page</span> then for <span class="highliter">Front page</span> select <strong>Home</strong>. You can follow below
+                screenshot.</p>
+              <img class="img-responsive" src="image/reading.png">
+            </div>
+			     <br>
+
+            <h3 id="permalink">Setup Permalink (Required)</h3>
+            <div>
+              <p>Make sure to configure permalink. By default WordPress uses web
+                URLs which have question marks and lots of numbers in them;
+                however, WordPress offers you the ability to create a custom URL
+                structure for your permalinks and archives. This can improve the
+                aesthetics, usability, and forward-compatibility of your links.
+                From WP admin panel go to the following path <span class="highliter">
+                  Settings > Permalink</span> then select "Post name".</p>
+            </div>
+            <h3 id="widgetImport">Widgets Settings Import</h3>
+            <div>
+              <p><strong>Import Widget Setting Data: </strong> Import Widget Setting Data: If you want to use the demo site widget settings on your website, we recommend to install and activate "Widget Settings Importer/Exporter" plugin which gives you the ability to import the demo widget settings, saved as a .json file type. The import will not overwrite any data currently within the sidebars, but will increment the widgets and add a new instance of the widget. Choose Tools > Widgets Setting Import then select widget_data.json file from Demo Widget Settings folder directly from the demo content folder (found inside the StarterPro theme package you’ve downloaded). Then click on Show Widget Settings Button. Select all or those widgets which you really need and use "Import Widget Settings" button. All widgets with registered sidebars will be imported.</p>
+            </div>
+
+            <h3 id="vcdoc">King Composer Documentation</h3>
+            <div>
+              <p>
+                <strong>To read the doc <a class="scroll" href="http://docs.kingcomposer.com/" target="_blank">Click Here</a></strong>
+              </p>  
+            </div>
+
+          </section>
+
+
+          <section class="doc-section">
+            <h1 id="themeops">StarterPro Options</h1>
+            <div>
+              <p style="text-align:justify">This section will provide you an in-depth guide on how to use the StarterPro Options. To access the StarterPro Options page, go to: <strong>Dashboard > Appearance > Customize.</strong></p>
+            </div>
+            
+            <!-- working -->
+
+            <div>
+              <img class="img-responsive" src="image/theme-customize.png">
+              
+              <p style="text-align:justify">Here is a screenshot of the StarterPro Options page. The default settings are shown in the following image.</p>
+              <br><br>
+              <img class="img-responsive" src="image/startpro-options.png">
+              <br><br>
+              <p>Inside the StarterPro Options</p>
+              <img class="img-responsive" src="image/inside-starterpro.png">
+            </div>
+            <br>
+
+            <h3 id="ops2">Header Settings</h3>
+            <div>
+      				<p style="text-align:justify">In the Header Settings section, you get several header customization options such as Header Styles (solid/transparent), header background color, header border color, header padding, sticky header, sticky background color and so on.</p>
+      				<strong class="another-store">1. Transparent Header:</strong> The header area is transparent so the background content is shown. 
+      				<img class="img-responsive" src="image/header-transparent.png">
+      				<br>
+      				<strong class="another-store">2. Solid Header: </strong>As the name suggests, a solid header’s background contents won’t be shown.
+      				<img class="img-responsive" src="image/header-solid.png">
+      				<br>   
+            </div>
+
+            <h3 id="ops3">Logo & Favicon Options</h3>
+            <div>
+              <p style="text-align:justify">This section will let you set everything related to the logo, favicon, coming soon page, 404 page and so on.</p>
+              <img class="img-responsive" src="image/logo-favicons.png">
+              <p style="text-align:justify">You can upload a favicon (the tiny image shown on the browser tab for your site), define whether an image or texts will be used as the logo, the logo and background for 404 and coming soon pages.</p>
+            </div>
+
+
+            <h3 id="ops4">Sub Header Settings</h3>
+            <div>
+              <p style="text-align:justify">This section will let you set a background image for the site's sub header.</p>
+              <img class="img-responsive" src="image/header-banner.png">
+            </div> <br>
+
+            <h3 id="ops7">Typography Settings</h3>
+            <div>
+              <p style="text-align:justify">On this page, you can change your site font-family, font size, font weight, font color, alignment etc. 600+ Google fonts added in this font selection option.</p>
+              <img class="img-responsive" src="image/typography.png">
+            </div>
+            <br>
+
+            <h3 id="ops9">Layout & Styling</h3>
+            <div>
+              <p style="text-align:justify">These options manage the color variations of your theme. You can choose site link color, hover color, background color or images and many more. You can also use color with opacity (rgba color pattern).</p>
+              <img class="img-responsive" src="image/style-layout.png">
+              <p style="text-align:justify">You can select full width or boxed layout whichever you like. A general background image/color can be defined for the whole site. Use the color options to tweak everything related to colors.</p>
+            </div>
+
+            <h3 id="ops10">Social Media</h3>
+            <div>
+              <p style="text-align:justify">This section lets you enter all of your social media profile links and then you can use them elsewhere of the site using StarterPro social features.</p>
+              <img class="img-responsive" src="image/social-media.png">
+            </div>
+
+            <br>
+
+            <h3 id="ops11">Coming Soon</h3>
+            <div>
+              <p style="text-align:justify">We’ve provided preset coming soon page options. Create a new page with Coming Soon template and then customize it from the StarterPro Options page’s Coming Soon section.</p>
+              <img class="img-responsive" src="image/coming-soon.png">
+              <br>
+            </div>
+            <br>
+
+            <h3 id="ops12">404 Page</h3>
+            <div>
+              <p style="text-align:justify">We’ve provided preset 404 page options. Create a new page using the 404 page template and then customize it from the StarterPro Options page’s 404 page section.</p>
+              <img class="img-responsive" src="image/404-page.png">
+              <br>
+            </div>
+            <br>
+
+            <h3 id="ops13">Blog</h3>
+            <div>
+              <p style="text-align:justify">This section controls the look and feel of your website's blog. Set the number of columns of the blog section here. You can decide if the blog pages to show pageviews, categories, authors, date etc. Enable or disable these options here.</p>
+              <img class="img-responsive" src="image/blog.png">
+              <p style="text-align:justify">Creating a page to show the latest blog posts one after another is easy. Just create a new page with the specific Blog page template and confirm additional settings. Now link that page wherever you want to provide access to your blog.</p>
+            </div>
+
+<br>
+            <h3 id="ops14">Footer</h3>
+            <div>   
+              <p style="text-align:justify">If you want to show some texts (e.g. copyright notice) on your website footer, turn on this option, define the number of columns and put the text here. It will be displayed on your site's bottom.</p>
+              <img class="img-responsive" src="image/footer.png">
+            </div>
+
+          </section>
+
+
+
+<!-- Shortcode sections -->
+<!-- ********************************************* -->
+
+          <section class="doc-section">
+            <h1 id="themeopss">Our Shortcodes List</h1>
+            <div>
+              <p style="text-align:justify">This section will introduce you to the StarterPro shortcodes. These are our custom shortcodes developed for the King Composer plugin.</p>
+              <img class="img-responsive" alt="" src="image/kingcomposer-shortcode.png">
+            </div>
+
+            
+            <br>
+            <h3 id="short1">Classic Slider</h3>
+            <div>
+              <p style="text-align:justify">Use the Classic Slider shortcode to place a  stunning top slider on your site. This section will display a predefined number of slider frames on the top of your website.</p>
+              <img class="img-responsive" src="image/starterpro-slider.png">
+              <p style="text-align:justify">You can easily use this slider. Open our shortcode list and just select Classic Slider.</p>
+              <img class="img-responsive" src="image/king-img/king3.png">
+            </div>
+
+            <!-- Themeum Project -->
+            <h3 id="short2">Themeum Project</h3>
+            <div>
+              <p style="text-align:justify">This shortcode displays StarterPro projects (portfolio items). In this section, users can easily get all project related information.</p>
+              <img class="img-responsive" src="image/project.png">
+              <p style="text-align:justify">Open our shortcode list, then select and customize the Themeum Project shortcode.</p>
+              <img class="img-responsive" src="image/king-img/king4.png">
+            </div>
+
+            <!-- Team Carousel -->
+            <h3 id="short3">Team Carousel</h3>
+            <div>
+              <p style="text-align:justify">The StarterPro theme has a built-in addon Team Carousel to display your team members on the site.</p>
+              <img class="img-responsive" src="image/team-corsal.png"><br>
+              <p style="text-align:justify">Open our shortcode list and insert the Team Carousel shortcode.</p><br>
+              <img class="img-responsive" src="image/king-img/king5.png"><br>
+              <p style="text-align:justify">In the Team Carousel addon, you will get the "Add Element" option. Click that and insert the "Themeum Team" shortcode to add team member information.</p><br>
+              <img class="img-responsive" src="image/king-img/king6.png">
+              <p>Finally, save settings.</p>
+            </div>
+            <br>
+
+             <!-- Latest Post -->
+            <h3 id="short4">Latest Post</h3>
+            <div>
+              <p style="text-align:justify">This shortcode displays your latest news or blog posts.</p>
+              <img class="img-responsive" src="image/latest-post.png"><br>
+              <p style="text-align:justify">You can easily change the layout of the latest post section on any page. 
+</p>
+              <img class="img-responsive" src="image/king-img/king7.png">
+            </div>
+            <br>
+
+            <!-- Call to Action -->
+            <h3 id="short5">Call to Action</h3>
+            <div>
+              <p style="text-align:justify">This shortcode displays a call to action section</p>
+              <img class="img-responsive" src="image/call-to-action.png">
+            </div> 
+            <br>
+
+            <!-- Themeum Title -->
+            <h3 id="short6">Themeum Title</h3>
+            <div>
+              <p style="text-align:justify">This shortcode displays a title with a subtitle & lines.</p>
+              <img class="img-responsive" src="image/themeum-title.png">
+              <p>The following image shows the backend of the Themeum Title shortcode.</p>
+              <img class="img-responsive" src="image/king-img/themeum-title.png">
+            </div>
+
+
+<!-- ========================================= -->
+<br>
+            <h3 id="short7">Testimonial</h3>
+            <div>
+              <p style="text-align:justify">This shortcode displays testimonials about your products/services provided by your clients. </p>
+              <img class="img-responsive" src="image/testimonial.png">
+              <p style="text-align:justify">The following image shows the backend of the Testimonial shortcode.</p>
+              <img class="img-responsive" src="image/king-img/testimonials.png">
+            </div>     
+<!-- ============================================ -->
+<br>
+            <h3 id="short8">Client Carousel</h3>
+            <div>
+              <p style="text-align:justify">This shortcode displays a carousel that displays your clients as a swipeable list. </p>
+              <img class="img-responsive" src="image/client-carosoual.png">
+
+              <p style="text-align:justify">Open our shortcode list and insert the Client Carousel shortcode.
+</p>
+              <img class="img-responsive" src="image/king-img/client-carosual.png">
+
+              <p style="text-align:justify">Customize the element with appropriate contents and settings.</p>
+              <img class="img-responsive" src="image/king-img/client-img.png">
+            </div> 
+
+          </section>
+
+
+<!-- end of the shortcode sections -->
+<!-- ***********************************************************8 -->
+
+
+          <section class="doc-section">
+            <h1 id="scdoc">Homepage Banckend with KingComposer</h1>
+            <div>
+              <p style="text-align:justify">King Composer is a very unique plugin, it will help you managing your content on a WordPress site and create stunning layouts in few minutes without coding. Now a days many websites have complex grid layouts with columns, tabs, sliders and etc. In the past, to create that type of layouts you should be HTML guru or Shortcodes operator ninja.</p>
+            <p>Here is the documentation with video tutorial <a href="http://docs.kingcomposer.com/">KingComposer Doc</a></p>
+              <img class="img-responsive" src="image/king-composer-addons.jpg">
+            </div>
+            
+          </section>
+          <section class="doc-section">
+            <h1 id="shortcode">Shortcode List</h1>
+            <div>
+              <p style="text-align:justify">We have 12 custom shortcodes. All shortcodes are integrated with KingComposer.</p>
+              <img class="img-responsive" src="image/kingcomposer-shortcode.png">
+            </div>
+            
+          </section>
+          <footer id="footer"> <span class="copyright"> Designed By <a target="_blank" href="http://themeum.com/" title="High Quality Premium Responsive WordPress Themes">Themeum</a> | All Rights Reserved. </span> </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

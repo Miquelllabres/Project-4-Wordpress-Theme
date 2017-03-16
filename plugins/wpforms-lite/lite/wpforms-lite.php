@@ -265,11 +265,6 @@ class WPForms_Lite {
 				'name'        => 'Billing / Order Form',
 				'slug'        => 'order',
 				'description' => 'Collect payments for product and service orders with this ready-made form template. You can add and remove fields as needed.',
-			),
-			array(
-				'name'        => 'Newsletter Sign Up Form',
-				'slug'        => 'subscribe',
-				'description' => 'Add subscribers and grow your email list with this newsletter signup form. You can add and remove fields as needed.',
 			)
 		);
 		?>
@@ -415,9 +410,6 @@ class WPForms_Lite {
 	public function form_panels() {
 
 		?>
-		<button class="wpforms-panel-providers-button upgrade-modal" data-panel="providers">
-			<i class="fa fa-bullhorn"></i><span>Marketing</span>
-		</button>
 		<button class="wpforms-panel-payments-button upgrade-modal" data-panel="payments">
 			<i class="fa fa-usd"></i><span>Payments</span>
 		</button>

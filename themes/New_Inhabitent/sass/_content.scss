@@ -1,0 +1,179 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.option {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0.5s;
+    // -webkit-animation-iteration-count: 5;
+}
+.singleadventure{
+	margin-top:-70px;
+	.box{
+		width: 80%;
+		margin:0 auto;
+		margin-bottom: 5vh;
+		}
+		button{
+		background:none;
+		background-color:none;
+		}
+		img{
+			width:100%;
+		}
+}
+//ARCHIVE PAGE//
+#archiveP{
+	// display:flex;
+	// flex-direction:row;
+	// justify-content:space-between;
+	width:100%;
+	// margin:0 auto;
+
+	#secondary{
+		margin:7vh 0;
+		width: 20%;
+		h2{
+			margin:0 2vh;
+		}
+		.textwidget{
+			margin:2vh;
+		}
+		ul{
+			margin:2vh 
+		}
+	}
+	textarea{
+		width:80%;
+	}
+	.main{
+		width: 70%;
+		margin:0 auto;
+		border-right:1px solid teal;
+		
+		iframe{
+			width: 90%
+		}
+		
+	}
+	button{
+		background-color:teal;
+		color: white;
+		width: 200px;
+		text-transform:uppercase;
+	}
+	.aside{
+	justify-content: center;
+	text-align: left;
+	width: 25%;
+	border-left: 1px solid #a1a1a1;
+	margin: 0 5vh;
+	}
+	h3{
+	margin: 4vh 4vh;
+	font-size: 1.5rem;
+	}
+	.contact{
+	color:#008080;
+	}
+	.teal{
+		color:teal;
+	}
+	.flexP{
+		display:flex;
+		flex-direction:row;
+		justify-content: center;
+	}
+	.width{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.marginxs{
+		margin:3vh;
+	}
+	p{
+	line-height: 4vh;
+	margin: 0 4vh;
+	font-family: merry;
+	font-size: 1.25rem;
+	}
+	i{
+	margin-right: 1vh;
+	color:black;
+	}
+	span{
+		font-weight:bold;
+	}
+	a{
+		color:teal;
+		text-decoration: none;
+		font-family: merry;
+		}
+	
+}
+.flexo{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+		.width{
+			width: 70%;
+		}
+		
+}
+
+//END OF ARCHIVE//
+.flex{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+	width:80%;
+	margin:0 auto;
+}
+.border{
+	border:1px solid #a1a1a1;
+	width: 100%;
+}
+/* Posts and pages */
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $base__space-unit 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 $base__space-unit;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}

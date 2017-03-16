@@ -180,6 +180,11 @@ class WPForms_Welcome {
 		// If we are redirecting, clear the transient so it only happens once
 		delete_transient( 'wpforms_activation_redirect' );
 
+		// Check option to disable welcome redirect
+		if ( get_option( 'wpforms_activation_redirect', false ) ) {
+			return;
+		}
+
 		// Only do this for single site installs
 		if ( is_network_admin() || isset( $_GET['activate-multi'] ) ) {
 			return;

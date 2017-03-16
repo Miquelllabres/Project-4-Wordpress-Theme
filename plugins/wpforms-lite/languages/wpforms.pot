@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WPForms package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPForms 1.3.4\n"
+"Project-Id-Version: WPForms 1.3.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpforms\n"
-"POT-Creation-Date: 2017-02-09 18:10:00+00:00\n"
+"POT-Creation-Date: 2017-02-22 22:15:23+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "taxonomy"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:268
+#: includes/admin/builder/class-builder.php:271
 #: pro/includes/fields/class-date-time.php:229
 #: pro/includes/fields/class-date-time.php:231
 #: pro/includes/fields/class-date-time.php:452
@@ -56,7 +56,7 @@ msgstr ""
 msgid "DD"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:269
+#: includes/admin/builder/class-builder.php:272
 #: pro/includes/fields/class-date-time.php:228
 #: pro/includes/fields/class-date-time.php:232
 #: pro/includes/fields/class-date-time.php:433
@@ -65,218 +65,218 @@ msgstr ""
 msgid "MM"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:270
+#: includes/admin/builder/class-builder.php:273
 msgid ""
 "The {source} {type} contains over {limit} items ({total}). This may make the "
 "field difficult for your vistors to use and/or cause the form to be slow."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:271
+#: includes/admin/builder/class-builder.php:274
 #: includes/admin/class-editor.php:96
 #: pro/includes/admin/entries/class-entries.php:994
 msgid "Cancel"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:272
+#: includes/admin/builder/class-builder.php:275
 msgid "OK"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:273
+#: includes/admin/builder/class-builder.php:276
 #: includes/admin/class-editor.php:70
 msgid "Close"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:274
+#: includes/admin/builder/class-builder.php:277
 msgid ""
 "Due to form changes, conditional logic rules have been removed or updated:"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:275
+#: includes/admin/builder/class-builder.php:278
 #: pro/includes/admin/entries/class-entries-table.php:176
 msgid "Field"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:276
+#: includes/admin/builder/class-builder.php:279
 msgid "Field Locked"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:277
+#: includes/admin/builder/class-builder.php:280
 msgid "This field cannot be deleted or duplicated."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:278
+#: includes/admin/builder/class-builder.php:281
 msgid "Available Fields"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:279
+#: includes/admin/builder/class-builder.php:282
 msgid "No fields available"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:280
+#: includes/admin/builder/class-builder.php:283
 msgid "Heads up!"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:282
+#: includes/admin/builder/class-builder.php:285
 msgid "No email fields"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:283
+#: includes/admin/builder/class-builder.php:286
 msgid "Are you sure you want to delete this notification?"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:284
+#: includes/admin/builder/class-builder.php:287
 msgid "Enter a notification name"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:285
+#: includes/admin/builder/class-builder.php:288
 msgid "Eg: User Confirmation"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:286
+#: includes/admin/builder/class-builder.php:289
 msgid "You must provide a notification name"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:287
+#: includes/admin/builder/class-builder.php:290
 msgid ""
 "Form must contain one notification. To disable all notifications use the "
 "setting Notifications dropdown setting."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:288
+#: includes/admin/builder/class-builder.php:291
 #: lite/includes/admin/class-settings.php:131
 #: pro/includes/admin/class-settings.php:135
 msgid "Saving ..."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:289
+#: includes/admin/builder/class-builder.php:292
 msgid "Saved!"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:290
+#: includes/admin/builder/class-builder.php:293
 msgid "Save and Exit"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:291
-#: includes/admin/builder/class-builder.php:354
+#: includes/admin/builder/class-builder.php:294
+#: includes/admin/builder/class-builder.php:357
 msgid "Loading"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:297
+#: includes/admin/builder/class-builder.php:300
 msgid "Use Template"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:298
+#: includes/admin/builder/class-builder.php:301
 msgid ""
 "Changing templates on an existing form will DELETE existing form fields. Are "
 "you sure you want apply the new template?"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:299
+#: includes/admin/builder/class-builder.php:302
 msgid ""
 "You are almost done. To embed this form on your site, please paste the "
 "following shortcode inside a post or page."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:300
+#: includes/admin/builder/class-builder.php:303
 msgid "Or you can follow the instructions in this video."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:301
-#: includes/admin/builder/class-builder.php:404
+#: includes/admin/builder/class-builder.php:304
+#: includes/admin/builder/class-builder.php:407
 msgid "Exit"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:303
+#: includes/admin/builder/class-builder.php:306
 msgid "If you exit without saving, your changes will be lost."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:304
+#: includes/admin/builder/class-builder.php:307
 msgid "Are you sure you want to delete this field?"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:305
+#: includes/admin/builder/class-builder.php:308
 msgid "Are you sure you want to duplicate this field?"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:306
+#: includes/admin/builder/class-builder.php:309
 msgid "(copy)"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:307
+#: includes/admin/builder/class-builder.php:310
 msgid "Please enter a form title."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:308
+#: includes/admin/builder/class-builder.php:311
 msgid "This item must contain at least one choice."
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:309
+#: includes/admin/builder/class-builder.php:312
 #: includes/fields/class-base.php:239 includes/fields/class-base.php:570
 #: lite/wpforms-lite.php:78 pro/wpforms-pro.php:263
 msgid "Off"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:310
+#: includes/admin/builder/class-builder.php:313
 #: includes/fields/class-base.php:239 lite/wpforms-lite.php:77
 #: pro/wpforms-pro.php:262
 msgid "On"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:311
+#: includes/admin/builder/class-builder.php:314
 #: includes/templates/class-suggestion.php:59
 msgid "Other"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:312 includes/class-frontend.php:492
+#: includes/admin/builder/class-builder.php:315 includes/class-frontend.php:492
 #: pro/includes/fields/class-page-break.php:144
 msgid "Previous"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:315
+#: includes/admin/builder/class-builder.php:318
 #: includes/admin/builder/functions.php:246 includes/fields/class-base.php:471
 msgid "Show Smart Tags"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:316
+#: includes/admin/builder/class-builder.php:319
 msgid "Hide Smart Tags"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:317
+#: includes/admin/builder/class-builder.php:320
 msgid "-- Select Field --"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:318
+#: includes/admin/builder/class-builder.php:321
 #: pro/includes/class-provider.php:945
 msgid "-- Select Choice --"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:377
+#: includes/admin/builder/class-builder.php:380
 msgid "Now editing"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:387
+#: includes/admin/builder/class-builder.php:390
 #: pro/includes/admin/entries/class-entries.php:512
 msgid "Preview Form"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:389
+#: includes/admin/builder/class-builder.php:392
 #: includes/admin/overview/class-overview-table.php:159
 msgid "Preview"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:392
+#: includes/admin/builder/class-builder.php:395
 msgid "Embed Form"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:394
+#: includes/admin/builder/class-builder.php:397
 msgid "Embed"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:397
+#: includes/admin/builder/class-builder.php:400
 msgid "Save Form"
 msgstr ""
 
-#: includes/admin/builder/class-builder.php:399
+#: includes/admin/builder/class-builder.php:402
 #: pro/includes/admin/class-settings.php:451
 msgid "Save"
 msgstr ""
@@ -529,9 +529,9 @@ msgid ""
 "a>?"
 msgstr ""
 
-#. #-#-#-#-#  wpforms.pot (WPForms 1.3.4)  #-#-#-#-#
+#. #-#-#-#-#  wpforms.pot (WPForms 1.3.5)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#. #-#-#-#-#  wpforms.pot (WPForms 1.3.4)  #-#-#-#-#
+#. #-#-#-#-#  wpforms.pot (WPForms 1.3.5)  #-#-#-#-#
 #. Author of the plugin/theme
 #: includes/admin/class-menu.php:36 includes/admin/class-menu.php:37
 #: includes/admin/class-menu.php:48 includes/integrations.php:34
@@ -1103,7 +1103,7 @@ msgid "No field type found"
 msgstr ""
 
 #: includes/fields/class-base.php:798 includes/fields/class-name.php:311
-#: includes/fields/class-number.php:127
+#: includes/fields/class-number.php:132
 #: pro/includes/fields/class-address.php:624
 #: pro/includes/fields/class-date-time.php:532
 #: pro/includes/fields/class-file-upload.php:356
@@ -1274,7 +1274,7 @@ msgstr ""
 msgid "Numbers"
 msgstr ""
 
-#: includes/fields/class-number.php:132
+#: includes/fields/class-number.php:137
 msgid "Please enter a valid number."
 msgstr ""
 
@@ -1672,17 +1672,17 @@ msgid ""
 "To display all form fields, use the <code>{all_fields}</code> Smart Tag."
 msgstr ""
 
-#: lite/wpforms-lite.php:440
+#: lite/wpforms-lite.php:446
 msgid "is a PRO Feature"
 msgstr ""
 
-#: lite/wpforms-lite.php:441
+#: lite/wpforms-lite.php:447
 msgid ""
 "We're sorry, %name% is not available on your plan.<br><br>Please upgrade to "
 "the PRO plan to unlock all these awesome features."
 msgstr ""
 
-#: lite/wpforms-lite.php:442
+#: lite/wpforms-lite.php:448
 msgid "Upgrade to PRO"
 msgstr ""
 
@@ -3185,9 +3185,9 @@ msgstr ""
 msgid "Please deactivate WPForms Lite before activating WPForms"
 msgstr ""
 
-#. #-#-#-#-#  wpforms.pot (WPForms 1.3.4)  #-#-#-#-#
+#. #-#-#-#-#  wpforms.pot (WPForms 1.3.5)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  wpforms.pot (WPForms 1.3.4)  #-#-#-#-#
+#. #-#-#-#-#  wpforms.pot (WPForms 1.3.5)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://wpforms.com"
 msgstr ""
